@@ -33,7 +33,7 @@ const vocabularyData = [
             { korean: "빨래하다", english: "to do laundry" },
             { korean: "다리미질하다", english: "to iron" },
             { korean: "아이를 돌보다", english: "to take care of a child" },
-            { korean: "집을 고치다", english: "to fix the house" }
+            { korean: "집을 고치다", english: "to fix the house" },
             { korean: "test", english: "test" }
 
     
