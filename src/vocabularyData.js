@@ -34,9 +34,9 @@ const vocabularyData = [
             { korean: "다리미질하다", english: "to iron" },
             { korean: "아이를 돌보다", english: "to take care of a child" },
             { korean: "집을 고치다", english: "to fix the house" }
-        ]
-    },
-    {
+            { korean: "test", english: "test" }
+
+    
         title: "Common Words",
         words: [
             { korean: "살이 빠지다", english: "lose weight" },
