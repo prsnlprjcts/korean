@@ -2,7 +2,7 @@ const vocabularyData = [
     {
         title: "Curse Words",
         words: [
-            { korean: "씨발새끼", english: "F*cking son of a b*tch" },
+            { korean: "씨발 새끼", english: "F*cking son of a b*tch" },
             { korean: "좆됐어", english: "I am f*cked/it’s f*cked" },
             { korean: "미쳤어요?", english: "Are you nuts?/Are you insane?" },
             { korean: "뿅 갔나?", english: "Have you lost your mind?" },
@@ -34,9 +34,10 @@ const vocabularyData = [
             { korean: "다리미질하다", english: "to iron" },
             { korean: "아이를 돌보다", english: "to take care of a child" },
             { korean: "집을 고치다", english: "to fix the house" },
-            { korean: "test", english: "test" }
+        ]
+    },
 
-    
+    {
         title: "Common Words",
         words: [
             { korean: "살이 빠지다", english: "lose weight" },
