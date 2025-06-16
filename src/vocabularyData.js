@@ -15,6 +15,12 @@ const vocabularyData = [
             { korean: "죽을래?", english: "Do you want to die?" },
             { korean: "바보", english: "Stupid" },
             { korean: "제정신이야?", english: "What’s wrong with you?" },
+            { korean: "미친 새끼", english: "Crazy SOB or Crazy son of a b*tch" },
+            { korean: "씨발", english: "Fuck" },
+            { korean: "개새끼", english: "Son of a b*tch/ Asshole" },
+            { korean: "또라이", english: "Nutjob/Freak/Crazy" },
+            { korean: "그만해!", english: "Cut it out!/Enough!" },
+            { korean: "재수 없어", english: "You suck!" },
             { korean: "너 알바 아니야", english: "А тебя это ебать не должно" },
             { korean: "씨발 어쩔건데", english: "Какого хуя ты собрался делать?" }
         ]
