@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/korean/static/css/main.e6c13ad2.css",
-    "main.js": "/korean/static/js/main.59749ded.js",
+    "main.js": "/korean/static/js/main.ae961e90.js",
     "index.html": "/korean/index.html",
     "main.e6c13ad2.css.map": "/korean/static/css/main.e6c13ad2.css.map",
-    "main.59749ded.js.map": "/korean/static/js/main.59749ded.js.map"
+    "main.ae961e90.js.map": "/korean/static/js/main.ae961e90.js.map"
   },
   "entrypoints": [
     "static/css/main.e6c13ad2.css",
-    "static/js/main.59749ded.js"
+    "static/js/main.ae961e90.js"
   ]
 }
