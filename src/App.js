@@ -38,7 +38,7 @@ function App() {
 
   const handleShowAnswer = (setIndex, wordIndex) => {
     const key = `${setIndex}-${wordIndex}`;
-    setShowAnswers(prev => ({ ...prev, [key]: true }));
+    setShowAnswers(prev => ({ ...prev, [key]: !prev[key] }));
   };
 
   const randomize = () => {
@@ -191,7 +191,7 @@ function App() {
                     style={{ ...styles.button, backgroundColor: '#3b82f6', marginLeft: '1rem' }}
                     onClick={() => handleShowAnswer(setIndex, wordIndex)}
                   >
-                    Show Correct
+                    {showAnswers[key] ? 'Hide Right Answer' : 'Show Correct'}
                   </button>
                 </div>
                 {feedbacks[key]}
