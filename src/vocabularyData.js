@@ -2,12 +2,12 @@ const vocabularyData = [
      {
         title: "Differentiating meanings of related compound verbs",
         words: [
-            { korean: "자기러 가다", english: "to go to get (object)" },
+            { korean: "가지러 가다", english: "to go to get (object)" },
             { korean: "데리러 가다", english: "to go to pick up (person, normal)" },
             { korean: "모시러 가다", english: "to go to pick up (honorific)" },
             { korean: "가지러 오다", english: "to come to get (object)" },
             { korean: "데리러 오다", english: "to come to pick up (person, normal)" },
-            { korean: "마시러 오다", english: "to come to pick up (honorific)" },
+            { korean: "모시러 오다", english: "to come to pick up (honorific)" },
             { korean: "가지고 가다", english: "to take (smth in a direction away from the speaker)" },
             { korean: "데리고 가다", english: "to take (a person in a direction away from the speaker)" },
             { korean: "모시고 가다", english: "to take a person away (honorific)" },
