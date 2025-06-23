@@ -1,4 +1,4 @@
-import React, { useState, useRef } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import vocabularyData from './vocabularyData';
 
 function App() {
@@ -6,8 +6,15 @@ function App() {
   const [userInputs, setUserInputs] = useState({});
   const [feedbacks, setFeedbacks] = useState({});
   const [showAnswers, setShowAnswers] = useState({});
+  const [isEnglishToKorean, setIsEnglishToKorean] = useState(true);
+  const [darkMode, setDarkMode] = useState(false);
 
   const sectionRefs = useRef({});
+
+  useEffect(() => {
+    document.body.style.backgroundColor = darkMode ? '#121212' : '#f7f9fb';
+    document.body.style.color = darkMode ? '#e0e0e0' : '#1e293b';
+  }, [darkMode]);
 
   const handleInputChange = (setIndex, wordIndex, value) => {
     setUserInputs(prev => ({
@@ -18,7 +25,9 @@ function App() {
 
   const handleCheck = (setIndex, wordIndex) => {
     const key = `${setIndex}-${wordIndex}`;
-    const correct = data[setIndex].words[wordIndex].korean;
+    const correct = isEnglishToKorean
+      ? data[setIndex].words[wordIndex].korean
+      : data[setIndex].words[wordIndex].english;
     const user = (userInputs[key] || '').trim();
 
     const feedback = [];
@@ -60,7 +69,9 @@ function App() {
       padding: '2rem',
       maxWidth: '1000px',
       margin: 'auto',
-      backgroundColor: '#f7f9fb'
+      backgroundColor: darkMode ? '#121212' : '#f7f9fb',
+      color: darkMode ? '#e0e0e0' : '#1e293b',
+      minHeight: '100vh'
     },
     header: {
       textAlign: 'center',
@@ -71,7 +82,17 @@ function App() {
       margin: '0.5rem 0',
       borderRadius: '6px',
       border: 'none',
-      backgroundColor: '#4f46e5',
+      backgroundColor: '#f18e9f',
+      color: 'white',
+      cursor: 'pointer',
+      fontWeight: 'bold'
+    },
+    button2: {
+      padding: '0.5rem 1rem',
+      margin: '0.5rem 0',
+      borderRadius: '6px',
+      border: 'none',
+      backgroundColor: '#2d2d2d',
       color: 'white',
       cursor: 'pointer',
       fontWeight: 'bold'
@@ -82,15 +103,19 @@ function App() {
       width: '100%',
       maxWidth: '400px',
       borderRadius: '6px',
-      border: '1px solid #ccc',
+      border: darkMode ? '1px solid #555' : '1px solid #ccc',
       marginTop: '0.5rem',
-      marginBottom: '0.5rem'
+      marginBottom: '0.5rem',
+      backgroundColor: darkMode ? '#222' : 'white',
+      color: darkMode ? '#e0e0e0' : 'black'
     },
     card: {
-      backgroundColor: 'white',
+      backgroundColor: darkMode ? '#1e1e1e' : 'white',
       padding: '1rem',
       borderRadius: '10px',
-      boxShadow: '0 2px 5px rgba(0,0,0,0.1)',
+      boxShadow: darkMode
+        ? '0 2px 5px rgba(255,255,255,0.1)'
+        : '0 2px 5px rgba(0,0,0,0.1)',
       marginBottom: '1.5rem'
     },
     section: {
@@ -99,7 +124,7 @@ function App() {
     sectionTitle: {
       fontSize: '1.5rem',
       marginBottom: '1rem',
-      color: '#1e293b'
+      color: darkMode ? '#bb86fc' : '#1e293b'
     },
     label: {
       fontWeight: 'bold',
@@ -112,7 +137,7 @@ function App() {
     },
     divider: {
       height: '1px',
-      backgroundColor: '#ddd',
+      backgroundColor: darkMode ? '#444' : '#ddd',
       margin: '2rem 0'
     },
     tabBar: {
@@ -125,14 +150,12 @@ function App() {
     tabButton: {
       padding: '0.4rem 1rem',
       borderRadius: '20px',
-      border: '1px solid #bbb',
-      backgroundColor: '#fff',
+      border: darkMode ? '1px solid #666' : '1px solid #bbb',
+      backgroundColor: darkMode ? '#2c2c2c' : '#fff',
+      color: darkMode ? '#ddd' : '#000',
       cursor: 'pointer',
       fontWeight: '500',
       transition: 'background-color 0.3s'
-    },
-    tabButtonHover: {
-      backgroundColor: '#eee'
     }
   };
 
@@ -142,7 +165,7 @@ function App() {
 
       {/* Tab Bar */}
       <div style={styles.tabBar}>
-        {data.map((set, idx) => (
+        {data.map((set) => (
           <button
             key={set.title}
             style={styles.tabButton}
@@ -153,12 +176,22 @@ function App() {
         ))}
       </div>
 
-      {/* Randomize Button */}
       <div style={{ textAlign: 'center' }}>
         <button style={styles.button} onClick={randomize}>🔀 Randomize Each Set</button>
       </div>
 
-      {/* Vocabulary Sections */}
+      <div style={{ textAlign: 'center', marginBottom: '1rem' }}>
+        <button style={styles.button} onClick={() => setIsEnglishToKorean(prev => !prev)}>
+          🔁 Switch to {isEnglishToKorean ? 'Korean → English' : 'English → Korean'}
+        </button>
+      </div>
+
+      <div style={{ textAlign: 'center', marginBottom: '2rem' }}>
+        <button style={styles.button2} onClick={() => setDarkMode(prev => !prev)}>
+          {darkMode ? '🌞 Light Mode' : '🌙 Dark Mode'}
+        </button>
+      </div>
+
       {data.map((set, setIndex) => (
         <div
           key={setIndex}
@@ -171,24 +204,24 @@ function App() {
             return (
               <div key={wordIndex} style={styles.card}>
                 <label style={styles.label}>
-                  {wordIndex + 1}. {item.english}
+                  {wordIndex + 1}. {isEnglishToKorean ? item.english : item.korean}
                 </label>
                 <input
                   type="text"
                   style={styles.input}
-                  placeholder="Type Korean here"
+                  placeholder={`Type ${isEnglishToKorean ? 'Korean' : 'English'} here`}
                   value={userInputs[key] || ''}
                   onChange={(e) => handleInputChange(setIndex, wordIndex, e.target.value)}
                 />
                 <div>
                   <button
-                    style={{ ...styles.button, backgroundColor: '#10b981' }}
+                    style={{ ...styles.button, backgroundColor: '#4cc79e' }}
                     onClick={() => handleCheck(setIndex, wordIndex)}
                   >
                     Check
                   </button>
                   <button
-                    style={{ ...styles.button, backgroundColor: '#3b82f6', marginLeft: '1rem' }}
+                    style={{ ...styles.button, backgroundColor: '#f18e9f', marginLeft: '1rem' }}
                     onClick={() => handleShowAnswer(setIndex, wordIndex)}
                   >
                     {showAnswers[key] ? 'Hide Correct' : 'Show Correct'}
@@ -197,7 +230,7 @@ function App() {
                 {feedbacks[key]}
                 {showAnswers[key] && (
                   <div style={styles.answer}>
-                    ✅ Correct Answer: <strong>{item.korean}</strong>
+                    ✅ Correct Answer: <strong>{isEnglishToKorean ? item.korean : item.english}</strong>
                   </div>
                 )}
               </div>
