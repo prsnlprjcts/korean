@@ -100,7 +100,7 @@ function App() {
     input: {
       padding: '0.5rem',
       fontSize: '1rem',
-      width: '100%',
+      width: '92%',
       maxWidth: '400px',
       borderRadius: '6px',
       border: darkMode ? '1px solid #555' : '1px solid #ccc',
