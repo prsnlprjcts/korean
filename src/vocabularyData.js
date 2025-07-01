@@ -14,9 +14,25 @@ const vocabularyData = [
             { korean: "가지고 오다", english: "to bring (something in a direction toward the speaker)" },
             { korean: "데리고 오다", english: "to bring (a person in a direction toward the speaker)" },
             { korean: "모시고 오다", english: "to bring (honorific)" },
+            { korean: "가져다주다", english: "to bring (something as a favor for someone) (object)" },
+            { korean: "데려다주다", english: "to bring (someone as a favor for someone) (person, normal)" },
+            { korean: "모셔다 주다", english: "to bring (someone as a favor for someone) (person, honorific)" },
+            { korean: "마중 나가다", english: "to go out to meet (generally for the purpose of picking someone up)" },
+            { korean: "마중 나오다", english: "to come out to meet (generally for the purpose of picking someone up)" },
+            { korean: "배웅하다", english: "to see off" }
         ]
     },
-
+    {
+        title: "Key Expressions",
+        words: [
+            { korean: "언제든지 상관없어요", english: "anytime is fine (всё равно)" },
+            { korean: "아무 때나 괜찮아요", english: "anytime is fine (хорошо, любое время подходит)" },
+            { korean: "편한 대로 하세요", english: "do as you wish" },
+            { korean: "그런 편이에요", english: "(someone) is rather like that" },
+            { korean: "그때그때 달라요", english: "it depends on the time" },
+            { korean: "상황에 따라 달라요", english: "it depends on the situation" }
+        ]
+    },
     {
         title: "Curse Words",
         words: [
