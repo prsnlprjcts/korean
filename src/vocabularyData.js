@@ -56,7 +56,7 @@ const vocabularyData = [
             { korean: "그만해!", english: "Cut it out!/Enough!" },
             { korean: "재수 없어", english: "You suck!" },
             { korean: "너 알바 아니야", english: "А тебя это ебать не должно" },
-            { korean: "씨발 어쩔건데", english: "Какого хуя ты собрался делать?" }
+            { korean: "씨발 어쩔건데", english: "Какого хуя ты собрался делать?" },
             { korean: "씨발 존나 짜증나", english: "Как же вы блять заебали" }
         ]
     },
