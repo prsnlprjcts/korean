@@ -1,4 +1,31 @@
 const vocabularyData = [
+    {
+        title: "Taylor Swift",
+        words: [
+            { korean: "민속", english: "Folklore" },
+            { korean: "백일몽", english: "Daydream" },
+            { korean: "평판", english: "Reputation" },
+            { korean: "종이 반지", english: "Paper ring" },
+            { korean: "카디건", english: "Cardigan" },
+            { korean: "복수", english: "Revenge" }
+        ]
+    },
+    {
+        title: "Colors",
+        words: [
+            { korean: "흰색", english: "White" },
+            { korean: "검은색", english: "Black" },
+            { korean: "빨간색", english: "Red" },
+            { korean: "초록색", english: "Green" },
+            { korean: "노란색", english: "Yellow" },
+            { korean: "파란색", english: "Blue" },
+            { korean: "갈색", english: "Brown" },
+            { korean: "회색", english: "Gray" },
+            { korean: "보라색", english: "Purple" },
+            { korean: "주황색", english: "Orange" },
+            { korean: "분홍색", english: "Pink" }
+        ]
+    },
      {
         title: "Shopping",
         words: [
