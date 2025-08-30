@@ -1,5 +1,30 @@
 const vocabularyData = [
     {
+        title: "Flavors and Textures",
+        words: [
+            { korean: "달다", english: "to be sweet" },
+            { korean: "맵다", english: "to be spicy" },
+            { korean: "짜다", english: "to be salty" },
+            { korean: "시다", english: "to be sour" },
+            { korean: "쓰다", english: "to be bitter" },
+            { korean: "느끼하다", english: "to be greasy" },
+
+            { korean: "달콤하다", english: "to be pleasantly sweet" },
+            { korean: "매콤하다", english: "to be pleasantly spicy" },
+            { korean: "짭짤하다", english: "to be pleasantly salty" },
+            { korean: "새콤하다", english: "to be pleasantly sour" },
+            { korean: "고소하다", english: "to be savory" },
+            { korean: "얼큰하다", english: "to be spicy (in a tingling manner)" },
+
+            { korean: "싱겁다", english: "to be bland" },
+            { korean: "담백하다", english: "to be light (in flavor)" },
+            { korean: "부드럽다", english: "to be soft" },
+            { korean: "쫄깃하다", english: "to be chewy" },
+            { korean: "상큼하다", english: "to be refreshing" },
+            { korean: "시원하다", english: "to be warm and pleasant tasting" }
+        ]
+    },
+    {
         title: "Taylor Swift",
         words: [
             { korean: "민속", english: "Folklore" },
@@ -26,7 +51,7 @@ const vocabularyData = [
             { korean: "분홍색", english: "Pink" }
         ]
     },
-     {
+    {
         title: "Shopping",
         words: [
             { korean: "현금", english: "cash" },
@@ -66,7 +91,7 @@ const vocabularyData = [
             { korean: "탈의실", english: "fitting room" }
         ]
     },
-     {
+    {
         title: "Differentiating meanings of related compound verbs",
         words: [
             { korean: "가지러 가다", english: "to go to get (object)" },
