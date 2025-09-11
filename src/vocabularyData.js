@@ -1,5 +1,44 @@
 const vocabularyData = [
     {
+    title: "Ingredients",
+    words: [
+        { korean: "마늘", english: "garlic" },
+        { korean: "상추", english: "lettuce" },
+        { korean: "버섯", english: "mushroom" },
+        { korean: "호박", english: "pumpkin" },
+        { korean: "고구마", english: "sweet potato" },
+        { korean: "시금치", english: "spinach" },
+
+        { korean: "조개", english: "clam" },
+        { korean: "홍합", english: "mussel" },
+        { korean: "굴", english: "oyster" },
+        { korean: "게", english: "crab" },
+        { korean: "가재", english: "crayfish" },
+        { korean: "새우", english: "shrimp" },
+        { korean: "오징어", english: "squid" },
+        { korean: "문어", english: "octopus" },
+        { korean: "낙지", english: "small octopus" },
+        { korean: "고등어", english: "mackerel" },
+        { korean: "연어", english: "salmon" },
+        { korean: "장어", english: "eel" },
+        { korean: "참치", english: "tuna" },
+        { korean: "갈치", english: "hairtail" },
+        { korean: "멸치", english: "anchovy" },
+
+        { korean: "날것", english: "raw" },
+        { korean: "익힌 것", english: "cooked" },
+        { korean: "말린 것", english: "dried" },
+        { korean: "얼린 것", english: "frozen" },
+
+        { korean: "밀가루", english: "flour" },
+        { korean: "인삼", english: "ginseng" },
+
+        { korean: "[후추]만 빼 주세요.", english: "Please take out [pepper]." },
+        { korean: "[A] 빼고 [B]만 넣어 주세요.", english: "Please take out [A] and only put in [B]." }
+    ]
+},
+
+    {
         title: "Flavors and Textures",
         words: [
             { korean: "달다", english: "to be sweet" },
