@@ -1,5 +1,18 @@
 const vocabularyData = [
     {
+    title: "Cooking Methods",
+    words: [
+        { korean: "끓인 것", english: "boiled" },
+        { korean: "찐 것", english: "steamed" },
+        { korean: "볶은 것", english: "sautéed" },
+        { korean: "튀긴 것", english: "deep fried" },
+        { korean: "부친 것", english: "fried (griddled)" },
+        { korean: "구운 것", english: "grilled" },
+        { korean: "삶은 것", english: "boiled (e.g., boiled egg, boiled noodles)" },
+        { korean: "데친 것", english: "blanched, parboiled (e.g., cooked vegetables)" }
+    ]
+},
+    {
     title: "Ingredients",
     words: [
         { korean: "마늘", english: "garlic" },
