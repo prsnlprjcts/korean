@@ -1,55 +1,77 @@
 const vocabularyData = [
+
     {
-    title: "Cooking Methods",
-    words: [
-        { korean: "끓인 것", english: "boiled" },
-        { korean: "찐 것", english: "steamed" },
-        { korean: "볶은 것", english: "sautéed" },
-        { korean: "튀긴 것", english: "deep fried" },
-        { korean: "부친 것", english: "fried (griddled)" },
-        { korean: "구운 것", english: "grilled" },
-        { korean: "삶은 것", english: "boiled (e.g., boiled egg, boiled noodles)" },
-        { korean: "데친 것", english: "blanched, parboiled (e.g., cooked vegetables)" }
-    ]
-},
+        title: "Bedroom Items",
+        words: [
+            { korean: "시트", english: "bedsheet" },
+            { korean: "거울", english: "mirror" },
+            { korean: "슬리퍼", english: "slippers" },
+            { korean: "선반", english: "shelf" },
+            { korean: "블라인드", english: "blinds" },
+            { korean: "카펫", english: "carpet" },
+            { korean: "의자", english: "chair" },
+            { korean: "램프", english: "lamp" },
+            { korean: "콘센트", english: "power outlet" },
+            { korean: "이불", english: "blanket / duvet" },
+            { korean: "가습기", english: "humidifier" },
+            { korean: "침대 머리판", english: "headboard" },
+            { korean: "전등 스위치", english: "light switch" },
+            { korean: "휴지통", english: "trash bin" },
+            { korean: "탁상시계", english: "bedside clock" }
+        ]
+    },
+
     {
-    title: "Ingredients",
-    words: [
-        { korean: "마늘", english: "garlic" },
-        { korean: "상추", english: "lettuce" },
-        { korean: "버섯", english: "mushroom" },
-        { korean: "호박", english: "pumpkin" },
-        { korean: "고구마", english: "sweet potato" },
-        { korean: "시금치", english: "spinach" },
+        title: "Cooking Methods",
+        words: [
+            { korean: "끓인 것", english: "boiled" },
+            { korean: "찐 것", english: "steamed" },
+            { korean: "볶은 것", english: "sautéed" },
+            { korean: "튀긴 것", english: "deep fried" },
+            { korean: "부친 것", english: "fried (griddled)" },
+            { korean: "구운 것", english: "grilled" },
+            { korean: "삶은 것", english: "boiled (e.g., boiled egg, boiled noodles)" },
+            { korean: "데친 것", english: "blanched, parboiled (e.g., cooked vegetables)" }
+        ]
+    },
+    {
+        title: "Ingredients",
+        words: [
+            { korean: "마늘", english: "garlic" },
+            { korean: "상추", english: "lettuce" },
+            { korean: "버섯", english: "mushroom" },
+            { korean: "호박", english: "pumpkin" },
+            { korean: "고구마", english: "sweet potato" },
+            { korean: "시금치", english: "spinach" },
 
-        { korean: "조개", english: "clam" },
-        { korean: "홍합", english: "mussel" },
-        { korean: "굴", english: "oyster" },
-        { korean: "게", english: "crab" },
-        { korean: "가재", english: "crayfish" },
-        { korean: "새우", english: "shrimp" },
-        { korean: "오징어", english: "squid" },
-        { korean: "문어", english: "octopus" },
-        { korean: "낙지", english: "small octopus" },
-        { korean: "고등어", english: "mackerel" },
-        { korean: "연어", english: "salmon" },
-        { korean: "장어", english: "eel" },
-        { korean: "참치", english: "tuna" },
-        { korean: "갈치", english: "hairtail" },
-        { korean: "멸치", english: "anchovy" },
+            { korean: "조개", english: "clam" },
+            { korean: "홍합", english: "mussel" },
+            { korean: "굴", english: "oyster" },
+            { korean: "게", english: "crab" },
+            { korean: "가재", english: "crayfish" },
+            { korean: "새우", english: "shrimp" },
+            { korean: "오징어", english: "squid" },
+            { korean: "문어", english: "octopus" },
+            { korean: "낙지", english: "small octopus" },
+            { korean: "고등어", english: "mackerel" },
+            { korean: "연어", english: "salmon" },
+            { korean: "장어", english: "eel" },
+            { korean: "참치", english: "tuna" },
+            { korean: "갈치", english: "hairtail" },
+            { korean: "멸치", english: "anchovy" },
 
-        { korean: "날것", english: "raw" },
-        { korean: "익힌 것", english: "cooked" },
-        { korean: "말린 것", english: "dried" },
-        { korean: "얼린 것", english: "frozen" },
+            { korean: "날것", english: "raw" },
+            { korean: "익힌 것", english: "cooked" },
+            { korean: "말린 것", english: "dried" },
+            { korean: "얼린 것", english: "frozen" },
 
-        { korean: "밀가루", english: "flour" },
-        { korean: "인삼", english: "ginseng" },
+            { korean: "밀가루", english: "flour" },
+            { korean: "인삼", english: "ginseng" },
 
-        { korean: "[후추]만 빼 주세요.", english: "Please take out [pepper]." },
-        { korean: "[A] 빼고 [B]만 넣어 주세요.", english: "Please take out [A] and only put in [B]." }
-    ]
-},
+            { korean: "[후추]만 빼 주세요.", english: "Please take out [pepper]." },
+            { korean: "[A] 빼고 [B]만 넣어 주세요.", english: "Please take out [A] and only put in [B]." }
+        ]
+    },
 
     {
         title: "Flavors and Textures",
