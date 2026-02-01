@@ -1,6 +1,52 @@
 const vocabularyData = [
 
     {
+        title: "그냥",
+        words: [
+            { korean: "안내문", english: "объявление, записка" },
+            { korean: "금연", english: "не курить" },
+            { korean: "역사 적인 장소", english: "Историческое место" },
+            { korean: "노약자 보호석", english: "Места для пожилых или беременных" },
+            { korean: "촬영 금지", english: "съемка запрещена" },
+            { korean: "애완견", english: "домашний питомец(собака)" },
+            { korean: "애완겹 출입 금지", english: "Вход с животными воспрещен" },
+            { korean: "벗다", english: "снимать (одежду)" },
+            { korean: "규칙", english: "правило" },
+            { korean: "을 드리고 오다", english: "Приводить с собой" },
+            { korean: "키우다", english: "растить, выращивать, заводить" },
+            { korean: "동물", english: "животное" },
+            { korean: "재료", english: "ингредиент" },
+            { korean: "대파", english: "лук-порей" },
+            { korean: "담다", english: "накладывать, наполнять( тележку)" },
+            { korean: "코너", english: "отдел, угол" },
+            { korean: "싱싱하다", english: "свежий" },
+            { korean: "만큼", english: "настолько, насколько" },
+            { korean: "버섯", english: "гриб" },
+            { korean: "모아 놓다", english: "собрать кого-то (с целью дальнейшего действия)" },
+            { korean: "조미료", english: "специи, приправы" },
+            { korean: "양념", english: "приправа, специи" },
+            { korean: "-(으)로 향하다", english: "направляться куда-либо" },
+            { korean: "간장", english: "соевый соус" },
+            { korean: "어치", english: "на (какую-то сумму)" },
+            { korean: "얇게", english: "тонко" },
+            { korean: "썰다", english: "мелко резать" },
+            { korean: "집다", english: "Брать (пальцами, щипцами)" },
+            { korean: "빠뜨리다", english: "Терять, пропускать" },
+            { korean: "마늘", english: "чеснок" },
+            { korean: "신용카드", english: "кредитная карта" },
+            { korean: "꽂다", english: "втыкать, вставлять, подключать" },
+            { korean: "서명을 하다", english: "ставить подпись" },
+            { korean: "장바구니", english: "корзина для покупок, авоська" },
+            { korean: "펼치다", english: "раскрывать, открывать" },
+            { korean: "장보다", english: "ходить за продуктами" },
+            { korean: "포장되다", english: "упаковываться" },
+            { korean: "깜빡하다", english: "вылететь из головы" },
+            { korean: "얼른", english: "быстро, живо" },
+            { korean: "발경하다", english: "обнаруживать" }
+        ]
+    },
+
+    {
         title: "Bedroom Items",
         words: [
             { korean: "시트", english: "bedsheet" },
