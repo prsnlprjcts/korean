@@ -1,6 +1,38 @@
 const vocabularyData = [
 
     {
+        title: "To be or not to be..",
+        words: [
+            { korean: "인기가 있다", english: "to be popular" },
+            { korean: "예의가 있다", english: "to be polite" },
+            { korean: "실력이 있다", english: "to be skilled" },
+            { korean: "책임감이 있다", english: "to be responsible" },
+            { korean: "의미가 있다", english: "to be meaningful" },
+            { korean: "관심이 있다", english: "to be interested" },
+            { korean: "자신이 있다", english: "to be confident" },
+            { korean: "매력이 있다", english: "to be charming" },
+            { korean: "재능이 있다", english: "to be talented" },
+            { korean: "효과가 있다", english: "to be effective" },
+            { korean: "관련이 있다", english: "to be related" },
+            { korean: "정이 많다", english: "to be very sympathetic" },
+            { korean: "욕심이 많다", english: "to be very greedy" },
+            { korean: "인내심이 많다", english: "to be very patient" },
+            { korean: "화가 나다", english: "to be angry" },
+            { korean: "힘이 나다", english: "to feel energized" },
+            { korean: "차이가 나다", english: "for there to be a difference" },
+            { korean: "샘이 나다", english: "to be jealous" },
+            { korean: "적응이 되다", english: "to become used to" },
+            { korean: "해가 되다", english: "to be harmful" },
+            { korean: "기분이 좋다", english: "to be in a good mood" },
+            { korean: "운이 좋다", english: "to be lucky" },
+            { korean: "키가 크다", english: "to be tall" },
+            { korean: "힘이 세다", english: "to be strong" },
+            { korean: "나이가 많다", english: "to be old" },
+            { korean: "마음이 넓다", english: "to be generous" }
+        ]
+    },
+
+    {
         title: "그냥",
         words: [
             { korean: "안내문", english: "объявление, записка" },
