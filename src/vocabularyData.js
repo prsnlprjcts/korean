@@ -1,6 +1,22 @@
 const vocabularyData = [
 
     {
+        title: "Topik 준비",
+        words: [
+            { korean: "살짝", english: "слегка, немного" },
+            { korean: "얇다", english: "тонкий" },
+            { korean: "껍질", english: "кожура" },
+            { korean: "막다", english: "предотвращать" },
+            { korean: "씻다", english: "мыть, стирать" },
+            { korean: "익히다", english: "доводить пищу до готовности" },
+            { korean: "따라서", english: "следовательно, поэтому" },
+            { korean: "쌀", english: "рис" },
+            { korean: "직접", english: "непосредственно, прямо" },
+            { korean: "소화", english: "пищеварение" }
+        ]
+    },
+
+    {
         title: "To be or not to be..",
         words: [
             { korean: "인기가 있다", english: "to be popular" },
