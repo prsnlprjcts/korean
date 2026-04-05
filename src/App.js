@@ -37,35 +37,47 @@ function App() {
   }, []);
 
   // 🔊 Korean Text-to-Speech (works on iPhone + others)
+
   const speak = (text) => {
-    if (!window.speechSynthesis) return;
+  if (!window.speechSynthesis) return;
 
-    const synth = window.speechSynthesis;
+  const synth = window.speechSynthesis;
 
-    // Stop previous speech (fixes iOS issues)
-    synth.cancel();
+  // Stop previous speech (important for iOS)
+  synth.cancel();
 
-    const voices = synth.getVoices();
+  const voices = synth.getVoices();
 
-    // Try to find Korean voice
-    let koreanVoice =
-      voices.find(v => v.lang === "ko-KR") ||
-      voices.find(v => v.lang.startsWith("ko"));
+  // Try to find a FEMALE Korean voice first
+  let koreanVoice =
+    voices.find(v =>
+      v.lang === "ko-KR" &&
+      (
+        v.name.toLowerCase().includes("female") ||
+        v.name.toLowerCase().includes("yuna") ||
+        v.name.toLowerCase().includes("sora")
+      )
+    )
+    ||
+    // Otherwise any Korean voice
+    voices.find(v => v.lang === "ko-KR")
+    ||
+    voices.find(v => v.lang.startsWith("ko"));
 
-    const utterance = new SpeechSynthesisUtterance(text);
+  const utterance = new SpeechSynthesisUtterance(text);
 
-    if (koreanVoice) {
-      utterance.voice = koreanVoice;
-    } else {
-      utterance.lang = "ko-KR";
-    }
+  if (koreanVoice) {
+    utterance.voice = koreanVoice;
+  } else {
+    utterance.lang = "ko-KR";
+  }
 
-    utterance.rate = 1;
-    utterance.pitch = 1;
-    utterance.volume = 1;
+  utterance.rate = 1;
+  utterance.pitch = 1;
+  utterance.volume = 1;
 
-    synth.speak(utterance);
-  };
+  synth.speak(utterance);
+};
 
   const handleInputChange = (setIndex, wordIndex, value) => {
     setUserInputs(prev => ({
