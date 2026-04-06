@@ -10,7 +10,7 @@ const vocabularyData = [
             { korean: "강연", english: "чтение лекции" },
             { korean: "청소년", english: "дети и подростки" },
             { korean: "층별", english: "поэтажный" },
-            { korean: "의모", english: "внешний вид" },
+            { korean: "외모", english: "внешний вид" },
             { korean: "신경을 쓰다", english: "нервничать, pay attention" },
             { korean: "즉", english: "другими словами" },
             { korean: "점잖다", english: "приличный солидный" },
