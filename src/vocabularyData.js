@@ -1,6 +1,36 @@
 const vocabularyData = [
 
     {
+    title: "Verbs Related to Money",
+    words: [
+        { korean: "돈을 벌다", english: "to make money" },
+        { korean: "돈을 쓰다", english: "to spend money" },
+        { korean: "돈을 절약하다", english: "to save money" },
+        { korean: "돈을 낭비하다", english: "to waste money" },
+
+        { korean: "돈을 모으다", english: "to save money" },
+        { korean: "돈이 모이다", english: "for money to be saved" },
+        { korean: "돈을 들이다", english: "to spend money" },
+        { korean: "돈이 들다", english: "to cost money" },
+        { korean: "돈을 남기다", english: "to leave behind money" },
+        { korean: "돈이 남다", english: "for money to remain" },
+
+        { korean: "값을 깎다", english: "to discount" },
+        { korean: "계산하다", english: "to calculate" },
+        { korean: "돈을 내다", english: "to pay (= 지불하다)" },
+        { korean: "돈을 받다", english: "to receive money" },
+
+        { korean: "돈을 빌려주다", english: "to lend money" },
+        { korean: "돈을 빌리다", english: "to borrow money" },
+        { korean: "돈을 돌려주다", english: "to return money" },
+        { korean: "돈을 갚다", english: "to pay back money" },
+
+        { korean: "돈이 떨어지다", english: "for money to run out" },
+        { korean: "환전하다", english: "to exchange money" }
+    ]
+},
+
+    {
         title: "Topik 준비",
         words: [
             { korean: "계획 세우다", english: "построить планы" },
